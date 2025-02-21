@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NodeMCU LED Control</title>
+</head>
+<body>
+    <h1>NodeMCU LED Control</h1>
+    <p>LED Status: <strong>{{ led_status }}</strong></p>
+
+    <button onclick="window.location.href='/led/on/'">Turn ON</button>
+    <button onclick="window.location.href='/led/off/'">Turn OFF</button>
+
+    {% if error %}
+        <p style="color: red;">Error: {{ error }}</p>
+    {% endif %}
+</body>
+</html>
